@@ -59,6 +59,7 @@ a:hover {
 }
 
 .nav {
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -66,13 +67,13 @@ a:hover {
     background-color: rgba(0, 0, 0, .95);
     margin-bottom: 25px;
     padding: 15px;
-    position: sticky;
 }
 .nav-title {
     flex: 1;
     color: rgb(240, 240, 240, 1);
     font-size: 3rem;
     font-weight: bolder;
+    margin-left: 25px;
 }
 .nav-links {
     display: flex;
@@ -177,6 +178,8 @@ a:hover {
     flex: 3;
     border: solid 3px #cbcbcb;
     margin: 15px;
+    outline: 5px solid red;
+    outline-offset: -5px;
 }
 
 .user-education-header {
