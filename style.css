@@ -59,7 +59,6 @@ a:hover {
 }
 
 .nav {
-    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -176,10 +175,39 @@ a:hover {
     display: flex;
     flex-flow: column nowrap;
     flex: 3;
-    outline: 5px solid red;
-    outline-offset: -5px;
-    padding: 15px;
+    border: solid 3px #cbcbcb;
     margin: 15px;
+}
+
+.user-education-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:rgba(10, 10, 10, .95) ;
+    height: 75px;
+    color: white;
+    padding-left: 25px;
+    font-size: 2.0rem;
+    font-weight: bolder;
+}
+
+.u-education-content {
+    font-size: 1.2rem;
+    padding: 25px
+}
+
+.u-education-content h2, p {
+    margin: 10px 0px;
+}
+
+.u-edu-content-title {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.u-edu-content-subtitle {
+    color:#cbcbcb;
+    font-size: 1.5rem;
 }
 
 .u-connections {
@@ -187,7 +215,7 @@ a:hover {
     flex-flow: column nowrap;
     max-height: 50vh;
     flex: 1;
-    border: 4px solid gray;
+    border: 4px solid #cbcbcb;
     margin: 15px;
 }
 
@@ -238,7 +266,7 @@ a:hover {
     align-items: center;
     background-color:white;
     height: 75px;
-    border-top: solid 3px gray;
+    border-top: solid 3px #cbcbcb;
 }
 
 .u-connections-footer a {
