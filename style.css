@@ -34,13 +34,18 @@ a {
     color: rgba(220, 220, 220, 0.9);
 }
 
-a:hover {
-    color:rgba(255, 255, 255, 1) ;
-}
-
 .main-content-container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    height: 100vh;
+    width: 55vw;
+    outline: 5px solid purple;
+    outline-offset: -5px;
+}
+
+a:hover {
+    color:rgba(255, 255, 255, 1) ;
 }
 
 .active {
@@ -60,6 +65,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, .95);
+    margin-bottom: 25px;
     padding: 15px;
     position: sticky;
 }
@@ -98,12 +104,13 @@ a:hover {
 .card-container {
     background-color: white;
     border: solid 3px #cbcbcb;
-    height:450px;
-    width: 800px;
+    height:400px;
     display: flex;
     flex-flow: column nowrap;
     font-size: 1.2rem;
     overflow: hidden;
+    outline: 5px solid blue;
+    outline-offset: -5px;
 }
 
 .user-card-top {
@@ -127,6 +134,7 @@ a:hover {
 .user-card-content {
     display: flex;
     flex-flow: column nowrap;
+    flex: 3;
     padding: 25px;
 }
 .user-card-content h1 {
@@ -168,4 +176,57 @@ a:hover {
 .user-education {
     display: flex;
     flex-flow: column nowrap;
+    flex: 3;
+    outline: 5px solid red;
+    outline-offset: -5px;
+}
+
+.u-connections {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 20vh;
+    flex: 1;
+}
+
+.u-connections-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(10, 10, 10, .95) ;
+    height: 75px;
+    color: white;
+}
+
+.uc-header-left {
+    background-color:rgba(100, 100, 100, .95);
+    border-radius: 50%;
+    flex: 1;
+    text-align: center;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.uc-header-right {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bolder;
+    flex: 5;
+}
+
+.u-connections img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.connection {
+    font-size: 1.5rem;
+}
+
+.connection-requests, .u-connections {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    outline: 5px solid green;
+    outline-offset: -5px;
 }
