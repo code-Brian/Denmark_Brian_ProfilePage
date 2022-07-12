@@ -109,8 +109,7 @@ a:hover {
     flex-flow: column nowrap;
     font-size: 1.2rem;
     overflow: hidden;
-    outline: 5px solid blue;
-    outline-offset: -5px;
+    margin: 15px;
 }
 
 .user-card-top {
@@ -161,10 +160,10 @@ a:hover {
 }
 
 .user-card-content a {
-   color: #045092;
-   font-size: 20px;
-   padding: 0;
-   text-align: center;
+    color: #045092;
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
 }
 
 .user-card-content a img {
@@ -179,13 +178,17 @@ a:hover {
     flex: 3;
     outline: 5px solid red;
     outline-offset: -5px;
+    padding: 15px;
+    margin: 15px;
 }
 
 .u-connections {
     display: flex;
     flex-flow: column nowrap;
-    height: 20vh;
+    max-height: 50vh;
     flex: 1;
+    border: 4px solid gray;
+    margin: 15px;
 }
 
 .u-connections-header {
@@ -216,17 +219,50 @@ a:hover {
 .u-connections img {
     height: 50px;
     width: 50px;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
     border-radius: 50%;
 }
 
 .connection {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
+    padding: 5px;
+}
+
+.u-connections-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:white;
+    height: 75px;
+    border-top: solid 3px gray;
+}
+
+.u-connections-footer a {
+    color: rgba(75, 75, 255, 1);
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.u-connections-footer a:hover {
+    color: rgba(100, 100, 255, 1);
+    box-shadow: 1px 1px 1px 1px rgba(75, 75, 255, 1);
+    padding: 5px;
+}
+
+.connection a {
+    color: black;
+}
+
+.connection a:hover {
+    color:rgba(75, 75, 255, 1);
 }
 
 .connection-requests, .u-connections {
     display: flex;
     flex-flow: column nowrap;
     flex: 1;
-    outline: 5px solid green;
-    outline-offset: -5px;
 }
