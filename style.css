@@ -178,8 +178,6 @@ a:hover {
     flex: 3;
     border: solid 3px #cbcbcb;
     margin: 15px;
-    outline: 5px solid red;
-    outline-offset: -5px;
 }
 
 .user-education-header {
@@ -209,8 +207,49 @@ a:hover {
 }
 
 .u-edu-content-subtitle {
-    color:#cbcbcb;
+    color:rgba(75, 75, 75, .95);
     font-size: 1.5rem;
+}
+
+.connection-requests {
+    display: flex;
+    flex-flow: column nowrap;
+    max-height: 50vh;
+    border: solid 3px #cbcbcb;
+    margin: 15px;
+}
+
+.connection-requests-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 75px;
+    background-color: rgba(10, 10, 10, .95);
+}
+
+.cr-header-left {
+    flex: 1;
+    color: white;
+    background-color:rgba(100, 100, 100, .95);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    padding: 5px;
+    max-width: 50px;
+}
+
+.cr-header-right {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    flex: 5;
+}
+
+.request {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .u-connections {
