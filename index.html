@@ -8,28 +8,77 @@
     <title>Profile Page</title>
 </head>
 <body>
-    <div class="nav">
-        <p class="nav-title">Profile</p>
-        <ul class="nav-links">
-            <li><a href="*">Home</a></li>
-            <li class="active"><a href="*">My Profile</a></li>
-            <li><a href="*">Find Connections</a></li>
-            <li><button class="btn">Sign Out</button></li>
-        </ol>       
-    </div>
-    <div class="card-container">
-        <div class="user-card-top">
-            <img src="img/jane-m.jpg" alt="`A picture of ${user.username}">
+    <div class="main-content-container">
+        <div class="nav">
+            <p class="nav-title">Profile</p>
+            <ul class="nav-links">
+                <li><a href="*">Home</a></li>
+                <li class="active"><a href="*">My Profile</a></li>
+                <li><a href="*">Find Connections</a></li>
+                <li><button class="btn">Sign Out</button></li>
+            </ol>       
         </div>
-        <div class="user-card-content">
-            <h1>Jane Doe</h1>
-            <h3><img src="img/map-marker.png" alt="a black map marker icon" class="icon-user-card">Seattle</h3>
-            <p>Developer | Engineer | Problem Solver</p>
-            <p>Master of Shadows and the Internet</p>
-            <p><a href="#"><img src="img/gear.png" alt="a picture of a gear, representing the settings icon">edit profile</a></p>
+        <div class="card-container">
+            <div class="user-card-top">
+                <img src="img/jane-m.jpg" alt="`A picture of ${user.username}">
+            </div>
+            <div class="user-card-content">
+                <h1>Jane Doe</h1>
+                <h3><img src="img/map-marker.png" alt="a black map marker icon" class="icon-user-card">Seattle</h3>
+                <p>Developer | Engineer | Problem Solver</p>
+                <p>Master of Shadows and the Internet</p>
+                <p><a href="#"><img src="img/gear.png" alt="a picture of a gear, representing the settings icon">edit profile</a></p>
+            </div>     
         </div>
-            
-            
+        <div class="user-education">
+            <div class="user-education-header">
+                <h3>Education</h3>
+            </div>
+            <p>Coding Dojo - Full Stack Bootcamp</p>
+            <p>Dec 2019 - Mar 2020</p>
+            <p>Triple black belt in Python, MERN and C#...</p>
+        </div>
+        <div class="connection-requests">
+            <div class="connection-requests-header">
+                <div class="cr-header-left">
+                    <h3>2</h3>
+                </div>
+                <div class="cr-header-right">
+                    <h2>Connection Requests</h2>
+                </div>
+            </div>
+            <div class="request">
+                <p><img src="img/todd-s.jpg" alt="a picture of Todd"><a href="#">Todd E</a><img src="img/accept-circle.png"><img src="img/close-circle.png"></p>
+            </div>
+            <div class="request">
+                <p><img src="img/phil-s.jpg" alt="a picture of Phil"><a href="#">Phil K</a><img src="img/accept-circle.png"><img src="img/close-circle.png"></p>
+            </div>
+        </div>
+        <div class="u-connections">
+            <div class="u-connections-header">
+                <div class="uc-header-left">
+                    <h3>500+</h3>
+                </div>
+                <div class="uc-header-right">
+                    <h2>Your Connections</h2>
+                </div>
+            </div>
+            <div class="connection">
+                <p><img src="img/adrien-s.jpg" alt="a picture of Adrien D"><a href="#">Adrien D</a></p>
+            </div>
+            <div class="connection">
+                <p><img src="img/anne-s.jpg" alt="a picture of Ann J"><a href="#">Ann J</a></p>
+            </div>
+            <div class="connection">
+                <p><img src="img/alayne-s.jpg" alt="a picture of Alayne T"><a href="#">Alayne T</a></p>
+            </div>
+            <div class="connection">
+                <p><img src="img/arry-s.jpg" alt="a picture of  Arry Y"><a href="#">Arry Y</a></p>
+            </div>
+        </div>
+        <div class="u-connections-footer">
+            <p><a href="#">View More</a></p>
+        </div>
         </div>
     </div>
 </body>
